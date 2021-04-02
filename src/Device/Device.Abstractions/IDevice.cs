@@ -4,9 +4,9 @@ namespace Device.Abstractions
     {
         string Name { get; set; }
 
-        void WriteCode();
+        void WriteCode(string code);
 
-        void ReadCode();
+        string ReadCode();
 
     }
 }

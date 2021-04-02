@@ -4,10 +4,12 @@ namespace Core.Abstractions
     {
         public string Name { get; set; }
 
-        bool Start();
+        void Start();
 
-        bool Stop();
+        void Stop();
 
-        bool Abort();
+        void Abort();
+
+        void Do(string message);
     }
 }
