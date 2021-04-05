@@ -19,12 +19,12 @@ namespace Device.Implementation
         public string Name { get; set; }
         public void WriteCode(string code)
         {
-            _framework.Info($"[{nameof(DeviceDemo)}]:Write code ##{code}## to DRIVER.");
+            _framework.Info($"[{nameof(DeviceDemo)}]:向驱动下发报文 ##{code}##.");
         }
 
         public string ReadCode()
         {
-            return $"[{nameof(DeviceDemo)}]:Read code ##{RandomString(10)}## from DRIVER.";
+            return $"[{nameof(DeviceDemo)}]:从DRIVER获取报文回复##{RandomString(10)}##.";
         }
         private static string RandomString(int length)
         {

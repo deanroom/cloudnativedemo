@@ -6,9 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\Core.Abstractions\Core.Abstractions.csproj" />
     <ProjectReference Include="..\..\Core\Core.Implementation\Core.Implementation.csproj" />
-    <ProjectReference Include="..\..\Device\Device.Implementation\Device.Implementation.csproj" />
     <ProjectReference Include="..\..\Framework\Framework.Implementations\Framework.Implementations.csproj" />
   </ItemGroup>
 

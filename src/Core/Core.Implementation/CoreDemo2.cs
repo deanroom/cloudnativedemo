@@ -4,37 +4,39 @@ using Framework.Abstractions;
 
 namespace Core.Implementation
 {
-    public class CoreDemo:ICore
+    public class CoreDemo2:ICore
     {
         private readonly IFramework _framework;
         private readonly IDevice _device;
 
-        public CoreDemo(IFramework framework, IDevice device)
+        public CoreDemo2(IFramework framework, IDevice device)
         {
             _framework = framework;
             _device = device;
         }
 
         public string Name { get; set; }
+
+
         public void Start()
         {
-            _device.WriteCode($"[{nameof(CoreDemo)}-Start()] said '动起来'");
+            _device.WriteCode($"[{nameof(CoreDemo2)}-Start()] said '动起来'");
         }
 
         public void Stop()
         {
-            _device.WriteCode($"[{nameof(CoreDemo)}-Stop()] said '立定'");
+            _device.WriteCode($"[{nameof(CoreDemo2)}-Stop()] said '立定'");
         }
 
         public void Abort()
         {
-            _device.WriteCode($"[{nameof(CoreDemo)}-Abort()] said '急刹，停车。'");
+            _device.WriteCode($"[{nameof(CoreDemo2)}-Abort()] said '急刹，停车。'");
         }
 
         public void Do(string message)
         {
             var result = _device.ReadCode();
-            _framework.Info($"[{nameof(CoreDemo)}-Do()] 获取指令 [{message}] 回复内容 [{result}]");
+            _framework.Info($"[{nameof(CoreDemo2)}-Do()] 获取指令 [{message}] 从Device拿到回复：[{result}]");
         }
     }
 }
