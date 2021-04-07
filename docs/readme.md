@@ -4,15 +4,26 @@
 
 1. [依赖倒置原则](https://en.wikipedia.org/wiki/Dependency_inversion_principle)
    1. 概念
-      1. High-level modules should not depend on low-level modules. Both should depend on abstractions.
-      2. [依赖注入](https://docs.microsoft.com/en-us/dotnet/core/extensions/dependency-injection)
+      1. 在面向对象编程领域中，依赖反转原则（Dependency inversion principle，DIP）是指一种特定的解耦（传统的依赖关系创建在高层次上，而具体的策略设置则应用在低层次的模块上）形式，使得高层次的模块不依赖于低层次的模块的实现细节，依赖关系被颠倒（反转），从而使得低层次模块依赖于高层次模块的需求抽象。
+         1. 高层次的模块不应该依赖于低层次的模块，两者都应该依赖于抽象接口.High-level modules should not depend on low-level modules. Both should depend on abstractions (e.g., interfaces).
+         2. 抽象接口不应该依赖于具体实现。而具体实现则应该依赖于抽象接口。Abstractions should not depend on details. Details (concrete implementations) should depend on abstractions.
+      2. [依赖注入](https://docs.microsoft.com/zh-cn/dotnet/core/extensions/dependency-injection)
             Dependency injection in .NET is a [first-class citizen](https://en.wikipedia.org/wiki/First-class_citizen), along with configuration, logging, and the options pattern.
-      3. [Dependency inversion/Inversion of Control (IoC)](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/architectural-principles#dependency-inversion)
+      3. [Dependency inversion/Inversion of Control (IoC)](https://docs.microsoft.com/zh-cn/dotnet/architecture/modern-web-apps-azure/architectural-principles#dependency-inversion)
       4. [Dependency Injection and Inversion of Control on .Net Core](https://alexalvess.medium.com/dependency-injection-and-inversion-of-control-on-net-core-3136fe98b72)
-   2. 实践
-      1. 抽象建立
-      2. 具体实现
-      3. 单元测试mock
+   2. Net Core/Net5中的实现
+      1. IServiceCollection
+      2. Asp.Net Core
+      3. Console/WPF/Prism
+   3. 工作实践
+      1. Demo
+         1. 抽象建立
+         2. 具体实现
+         3. 单元测试mock
+      2. 现有代码库重构
+         1. 抽象建立
+         2. 具体实现
+         3. 单元测试mock
 2. 跨平台/[云原生-Cloud Native](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/definition)
    1. 运行时
       1. 应用
