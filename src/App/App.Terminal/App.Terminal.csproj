@@ -6,8 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Core\Core.Abstractions\Core.Abstractions.csproj" />
     <ProjectReference Include="..\..\Core\Core.Implementation\Core.Implementation.csproj" />
+    <ProjectReference Include="..\..\Device\Device.Abstractions\Device.Abstractions.csproj" />
+    <ProjectReference Include="..\..\Device\Device.Implementation\Device.Implementation.csproj" />
+    <ProjectReference Include="..\..\Framework\Framework.Abstractions\Framework.Abstractions.csproj" />
     <ProjectReference Include="..\..\Framework\Framework.Implementations\Framework.Implementations.csproj" />
+    <ProjectReference Include="..\..\Runtime\Runtime.Abstractions\Runtime.Abstractions.csproj" />
+    <ProjectReference Include="..\..\Runtime\Runtime.Implementation\Runtime.Implementation.csproj" />
   </ItemGroup>
 
   <ItemGroup>
